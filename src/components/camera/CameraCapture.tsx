@@ -142,7 +142,7 @@ export default function CameraCapture({
     try {
       for (let i = 0; i < shotCount; i++) {
         setCurrent(i);
-        for (let s = countdown; s >= 1; s--) {
+        for (let s: number = countdown; s >= 1; s--) {
           setTick(s);
           playTick(s === 1);
           // klip dimulai tepat 2 detik sebelum jepretan
